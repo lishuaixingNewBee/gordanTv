@@ -1,0 +1,42 @@
+/* pages/movies/movie-detail/movie-detail.wxss */
+@import "../recommend-item/recommend-template.wxss";
+
+#myVideo {
+  width: 100%;
+  height: 421.87rpx;
+}
+
+.Video-box .title {
+  padding: 20rpx;
+  display: block;
+  font-size: 35rpx;
+}
+
+.Video-box .time {
+  font-size: 13px;
+  color: #979797;
+  padding: 0 20rpx;
+}
+
+.section-title {
+  margin: 10rpx 20rpx 0 20rpx;
+  position: relative;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+
+.section-title text {
+  font-size: 32rpx;
+  color: #505050;
+  font-weight: 400;
+}
+
+.section-title  .line {
+  position: absolute;
+  z-index: 9;
+  left: 0rpx;
+  width: 128rpx;
+  height: 1rpx;
+  background: linear-gradient(to left, #2dc799, #2fa2fb);
+  bottom: -1rpx;
+}

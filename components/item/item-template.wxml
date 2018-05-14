@@ -1,0 +1,40 @@
+<template name="itemTemplate">
+  <block wx:for="{{list}}" wx:for-item="item" wx:for-index="idx">
+    <!-- 音乐模块 -->
+    <block wx:if="{{style_type === 1}}">
+      <view class='music-list' catchtap="openDetail" data-list="{{item}}">
+        <text class='title ellipsis-row2'>{{item.title}}</text>
+        <text class="text-author ellipsis-row1">文／{{item.author.user_name}}</text>
+        <view class="text-music-cover">
+          <view class="text-music-cover-background"></view>
+          <view class="text-music-cover-img">
+            <view class="lazy_img resize_img img_center_y" style="background-image:url('{{item.img_url}}')"></view>
+          </view>
+          <view class="music-play music-detail-status">
+            <view class="play-btn"> </view>
+          </view>
+          <view width="100%" class="platform-icon"></view>
+        </view>
+        <text class="text-music-author ellipsis-row1">{{item.music_name}} · {{item.audio_author}} | {{item.audio_album}}</text>
+        <text class="text-content-short ellipsis-row2">{{item.forward}}</text>
+        <text class="date">{{item.post_date}}</text>
+      </view>
+    </block>
+    <!-- 视频模块 -->
+    <block wx:if="{{style_type === 2}}" catchtap="openDetail" data-list="{{item}}">
+      <view class='movie-list' catchtap="openDetail" data-list="{{item}}">
+        <view class='wrap-img' style="background-image:url({{item.thumbnails[0].url}})">
+          <view class='btn'></view>
+        </view>
+        <view class='video-des'>
+          <text class='video_title'>{{item.title}}</text>
+          <text class='time'>{{item.create_time}}</text>
+        </view>
+      </view>
+    </block>
+  </block>
+  <block>
+    <wxc-loadmore wx:if="{{hasMore}}" icon="{{true}}"></wxc-loadmore>
+    <wxc-loadmore wx:else is-end="{{true}}" text="汪~木有啦" icon="/images/icon/dog.png"></wxc-loadmore>
+  </block>
+</template>

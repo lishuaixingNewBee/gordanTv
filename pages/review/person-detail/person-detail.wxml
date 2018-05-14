@@ -1,0 +1,17 @@
+<!--pages/review/person-detail/person-detail.wxml-->
+<import src="../movie-grid/movie-grid-template.wxml" />
+<view class="container {{ isLoading ? '' : 'hidden'}}">
+  <view class="pd-hd">
+    <view class="pd-hd-bg" style="background-image: url({{personDetail.avatars.medium}})"></view>
+    <view class="pd-intro">
+      <view class="pd-avatar" style="background-image: url({{personDetail.avatars.medium}})"></view>
+      <view class="pd-name-cn">{{personDetail.name}}</view>
+      <view class="pd-name-en">{{personDetail.name_en}}</view>
+      <view class="pd-address">{{personDetail.born_place}}</view>
+    </view>
+  </view>
+  <view class='lists'>
+  <view class="fd-bd-title">主要作品</view>
+    <template is="movieGridTemplate" data="{{movieList:movieList}}" />
+  </view>
+</view>

@@ -1,0 +1,57 @@
+/* 推荐 */
+
+.video-item {
+  display: flex;
+  margin: 20rpx 20rpx 0rpx 20rpx;
+  justify-content: space-between;
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid #eee;
+}
+.recommend-container view:last-of-type .video-item{
+  border-bottom: none;
+}
+.video-item .wrap-img {
+  position: relative;
+  height: 146rpx;
+  width: 234rpx;
+}
+
+.video-item .wrap-img .btn {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: 80rpx;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('http://c1.adline.com.cn/static/img/play.png');
+}
+
+.content {
+  flex: 1;
+  height: 146rpx;
+  padding-left: 20rpx;
+  overflow: hidden;
+}
+
+.content .title {
+  height: 88rpx;
+  font-size: 33rpx;
+  line-height: 44rpx;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+}
+
+.content .detail {
+  height: 58rpx;
+}
+
+.content .detail text {
+  display: inline-block;
+  height: 58rpx;
+  line-height: 87rpx;
+  margin-right: 20rpx;
+}

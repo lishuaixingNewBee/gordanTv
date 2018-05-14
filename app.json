@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/music/music",
+    "pages/music/music-detail/music-detail",
+    "pages/videos/videos",
+    "pages/videos/video-detail/video-detail",
+    "pages/review/review",
+    "pages/review/person-detail/person-detail",
+    "pages/review/review-detail/review-detail",
+    "pages/review/search/search",
+    "pages/review/more-movie/more-movie"
+  ],
+  "tabBar": {
+    "borderStyle": "dark",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/music/music",
+        "text": "音乐",
+        "iconPath": "images/tab/music1.png",
+        "selectedIconPath": "images/tab/music.png"
+      },
+      {
+        "pagePath": "pages/videos/videos",
+        "text": "视频",
+        "iconPath": "images/tab/video1.png",
+        "selectedIconPath": "images/tab/video.png"
+      },
+      {
+        "pagePath": "pages/review/review",
+        "text": "影评",
+        "iconPath": "images/tab/review1.png",
+        "selectedIconPath": "images/tab/review.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2DC799",
+    "backgroundTextStyle": "dark",
+    "navigationBarTitleText": "王者荣耀",
+    "navigationBarTextStyle": "white"
+  }
+}

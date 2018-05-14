@@ -1,0 +1,12 @@
+<!--pages/post/posts.wxml-->
+<import src="/components/item/item-template.wxml" />
+<import src="/components/swiper/swiper-template.wxml" />
+<view class='bg'>
+  <template is="swipeTemplate" data="{{swiperList:swiperList,isTitle:true}}" />
+  <view class='vertical-movie-module'>
+    <text class='title'>为您推荐</text>
+    <view class='movielist-box'>
+      <template is="itemTemplate" data="{{list:movieList,style_type:2,hasMore:hasMore}}"/>
+    </view>
+  </view>
+</view>

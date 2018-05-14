@@ -1,0 +1,9 @@
+<!--pages/post/posts.wxml-->
+<import src="/components/item/item-template.wxml" />
+<view class='bg'>
+  <view class='vertical-movie-module'>
+    <view class='movielist-box'>
+      <template is="itemTemplate" data="{{list:musicList,style_type:1,hasMore:hasMore}}" />
+    </view>
+  </view>
+</view>

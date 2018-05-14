@@ -1,0 +1,155 @@
+/* 音乐模块 */
+.music-list{
+    background: #ffffff;
+    margin: 0 0 16rpx 0;
+    box-shadow: 0 2rpx 0 0 rgba(230, 230, 230, 0.5);
+}
+.ellipsis-row1{
+    -webkit-line-clamp: 1;
+}
+.ellipsis-row2{
+    -webkit-line-clamp: 2;
+}
+.music-list .title{
+  font-family: "PingFangSC-Light",sans-serif;
+  padding:30rpx 40rpx 0 40rpx;
+  font-size: 35rpx;
+  line-height: 60rpx;
+  max-height: 120rpx;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.music-list .text-author{
+    display: block;
+    font-size: 28rpx;
+    line-height: 60rpx;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 10rpx;
+    padding: 0 0 0 40rpx;
+}
+.text-music-cover {
+    position: relative;
+    clear: both;
+    height: 484rpx;
+    margin: 20rpx 0;
+    background: url(https://raw.githubusercontent.com/lishuaixingNewBee/ONE/master/images/music-list-right.png) no-repeat center right;
+    background-size: auto 100%;
+}
+.text-music-cover-background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 598rpx;
+    height: 484rpx;
+    border-radius: 0 316.8rpx 320rpx 0;
+    box-shadow: 0 0 0.625em 0.125em rgba(230, 230, 230, 0.5);
+}
+.text-music-cover-img {
+    position: absolute;
+    left: 130rpx;
+    top: 16rpx;
+    width: 452rpx;
+    height: 452rpx;
+    border-radius: 307.2rpx 310rpx 310rpx 310rpx;
+    background-size: cover;
+    background-image: url(http://image.wufazhuce.com/music-list-paceholder.png);
+    overflow: hidden;
+}
+.img_center_y {
+    width: 452rpx;
+    height: 452rpx;
+    border-radius: 307.2rpx 310rpx 310rpx 310rpx;
+    background-size: cover;
+}
+.music-play {
+    position: absolute;
+    left: 312rpx;
+    top: 198rpx;
+    width: 88rpx;
+    height: 88rpx;
+}
+.play-btn{
+  height: 100%;
+  width: 100%;
+  background-image:url('http://image.wufazhuce.com/play_btn_empty.png');
+  background-size: cover;
+}
+.platform-icon {
+    position: absolute;
+    left: 40rpx;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAABLCAMAAAAPkIrYAAAAPFBMVEUAAAAtx5n9+fe/8tmD2KhSzpGu6sowzJGg475q0Zpdz5Q2zI8sy5RIzY8/zY6R3bJ21aD98Oz+rJf95+HLodGTAAAAAXRSTlMAQObYZgAAAdNJREFUWMPd2NtS7CAQhWGzGppDOGTG93/XDVNbmXJIFOgLy/9OLj4xlcYUb09tM7312maTkFpyVEmOKslRpUaJYZtM0tYmlay1yfUjKykjZimoP2Ql3cvC6m7mwjKEoeyFFZg6oUa9/OjzMrdqRYlnbxg1imtWo95vILdqJQYdGcpwwdYsTYV4vF8mg/KKdRRKf7yrGbBm1totwPv2sJo8ZXkCqfA8Q/qxMm5FBkh/mcdUFlkPWskSKJvX2VZ1fR+woqX2+5vV9qv2n1nGc5FIn545nqoWv7WSr1sC+3BxfgVXNfb7lWW4QmT1xVnYtMId55amAnnTOVeP14mwlYvnf2OMoTvf9+6qzzb0rOuD+v78Qxp5vxiXkRuwHJ3039Kn1kD3W6E4bstW8Iw2DQtW0JmatGAlb9s7vGZl1NjtAv/TCLgdUebbRAHvYt9fisBGyNpcxYSsTaNgo5ZX/W6A7a2bC4swlprYl7L9jaWZedyp7WF5tgksaNFft8z080ovHwwOOOYsBvmv26I4Z7nHd05o88hAnp1tXTBQ1ntNW5qY7VZQhKcWz5zd0SdHbvlcTfpQJdee3GW/9k7h197BCGGi919imOh9oRgmeL/aa1X6B2CuIO5SFDkXAAAAAElFTkSuQmCC');
+    background-size: cover;
+    bottom: 16rpx;
+    width: 48rpx;
+    height: 48rpx;
+    margin: 0;
+}
+.text-music-author {
+   display: block;
+    font-size: 24rpx;
+    line-height: 33.6rpx;
+    color: #808080;
+    margin-top: 24rpx;
+    padding-left: 40rpx;
+}
+.text-content-short {
+    display: block;
+    font-size: 28rpx;
+    line-height: 51.996rpx;
+    max-height: 103.992rpx;
+    padding-left: 40rpx;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 20rpx;
+}
+.music-list .date {
+    font-size: 24rpx;
+    line-height: 33.6rpx;
+    display: block;
+    padding: 30rpx 0 30rpx 40rpx;
+    color: #808080;
+    text-align: left;
+}
+/* 视频 */
+.movie-list{
+  box-shadow: 0 8rpx 16rpx 0 rgba(7,17,27,.1);
+  margin: 0 20rpx;
+  overflow: hidden;
+  border-radius: 8rpx;
+  margin-bottom: 30rpx;
+  background: #fff;
+}
+.movie-list .wrap-img{
+    height: 420rpx;
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.movie-list .wrap-img .btn{
+  width: 90rpx;
+  height: 90rpx;
+  background-image: url(http://i.gtimg.cn/qqlive/images/20150911/i1441959133_1.jpg);
+  background-size: 90rpx;
+}
+.movie-list .video-des{
+  padding: 10px;
+}
+ .movie-list .video_title{
+  display: block;
+  font-size: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #333;
+  text-overflow: ellipsis;
+}
+.movie-list .video-des .time{
+  font-size: 13px;
+  color: #979797;
+}

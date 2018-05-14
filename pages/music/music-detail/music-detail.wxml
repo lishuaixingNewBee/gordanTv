@@ -1,0 +1,33 @@
+<!--pages/posts/post-detail/music.wxml-->
+<import src="../../../utils/wxParse/wxParse.wxml"/>
+<!--先静后动，先样式再数据-->
+<view class="container {{ isLoading ? '' : 'hidden'}}">
+  <view class="text-detail">
+    <view class='music_box' >
+      <view class='music_bg_b'></view>
+      <view class="music_bg_s {{!isPlay? 'cd_rotate' : ''}}"  style='background-image:url({{content.cover}})'></view>
+      <view catchtap="onMusicTap" class="play-btn {{isLoding? 'loading' : ''}} {{isPlay? 'on' : ''}}"></view>
+    </view>
+  </view>
+  <text class="title">{{content.story_title}}</text>
+  <view class="author-date">
+    <image class="avatar" src="{{content.story_author.web_url}}"></image>
+    <text class="author">{{content.story_author.user_name}}</text>
+    <text class="const-text">发表于 one</text>
+    <view class='singer'>
+      <text class="name">{{content.author.user_name}}</text>
+      <text class="song"> /{{content.title}}</text>
+    </view>
+  </view>
+  <view class="tool">
+    <view class="circle-img">
+      <view class='collected'></view>
+      <image catchtap="onColletionTap" src="{{collected? '/images/icon/collection.png' : '/images/icon/collection-anti.png'}}"></image>
+      <image catchtap="onShareTap" class="share-img" src="/images/icon/share.png"></image>
+    </view>
+    <view class="horizon"></view>
+  </view>
+    <view class="detail">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>  
+  </view>
+</view>

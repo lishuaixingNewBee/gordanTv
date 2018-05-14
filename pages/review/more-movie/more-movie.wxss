@@ -1,0 +1,7 @@
+/* pages/review/more-movie/more-movie.wxss */
+@import "../movie-grid/movie-grid-template.wxss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,16 @@
+<!--pages/movies/recommend/recommend.wxml-->
+<template name="recommend-item">
+  <view class='video-item'>
+    <view class='wrap-img'>
+      <view class='btn'></view>
+      <image src="{{item.thumbnails[0].url}}" style="height:146rpx;width:234rpx"></image>
+    </view>
+    <view class='content'>
+      <text class='title'>{{item.title}}</text>
+      <view class='detail'>
+        <text class='time'>{{item.create_time}}</text>
+        <text class='comment_count'>{{item.like_count}}跟帖</text>
+      </view>
+    </view>
+  </view>
+</template>

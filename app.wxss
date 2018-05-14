@@ -1,0 +1,38 @@
+/**app.wxss**/
+@import "utils/wxParse/wxParse.wxss";
+
+text {
+  font-family: MicroSoft Yahei;
+  font-size: 24rpx;
+  color: #666;
+}
+
+/* 隐藏 */
+
+page .hidden {
+  -webkit-filter: blur(0px); /* Chrome, Opera */
+  -moz-filter: blur(0px);
+  -ms-filter: blur(0px);
+  filter: blur(0px);
+  animation: blur 0.3s;
+}
+
+input {
+  font-family: MicroSoft YaHei;
+}
+
+@keyframes blur {
+  from {
+    -webkit-filter: blur(10px); /* Chrome, Opera */
+    -moz-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+  }
+
+  to {
+    -webkit-filter: blur(0px); /* Chrome, Opera */
+    -moz-filter: blur(0px);
+    -ms-filter: blur(0px);
+    filter: blur(0px);
+  }
+}

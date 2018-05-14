@@ -1,0 +1,24 @@
+<import src="movie-list/movie-list-template.wxml" />
+<import src="/components/swiper/swiper-template.wxml" />
+<view class="search-bar">
+  <input class="search-txt" placeholder-class="search-txt-plc" bindfocus="viewSearch" placeholder="请输入关键词搜" type="text" />
+</view>
+<view class="container {{ inTheaters && comingSoon && top250 ? 'hidden' : ''}}">
+  <view>
+    <template is="swipeTemplate" data="{{swiperList:swiperList}}" />
+  </view>
+  <view class="movies-template">
+    <template is="movieListTemplate" data="{{...inTheaters}}" />
+  </view>
+
+  <view class="movies-template">
+    <template is="movieListTemplate" data="{{...comingSoon}}" />
+  </view>
+  <view class="movies-template">
+    <template is="movieListTemplate" data="{{...top250}}" />
+  </view>
+</view>
+
+<view class="search-panel" wx:if="{{searchPanelShow}}">
+  <template is="movieGridTemplate" data="{{...searchResult}}" />
+</view>

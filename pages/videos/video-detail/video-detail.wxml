@@ -1,0 +1,21 @@
+<!--pages/movies/movie-detail/movie-detail.wxml-->
+<import src="../recommend-item/recommend-template.wxml" />
+<view>
+  <view class='Video-box'>
+    <video id="myVideo" src="{{video.url}}" controls autoplay></video>
+    <text class='title'>{{video.title}}</text>
+    <text class='time'>发布时间：{{video.time}}</text>
+  </view>
+  <view class='section-title'>
+    <text>相关推荐</text>
+    <view class="line"></view>
+  </view>
+  <view class='recommend-container'>
+    <block wx:for="{{movieList}}" wx:for-item="item" wx:for-index="idx">
+      <!-- template -->
+       <view catchtap="openDetail" data-list="{{item}}">
+        <template is="recommend-item" data="{{item}}" />
+      </view>
+    </block> 
+  </view>
+</view>

@@ -1,0 +1,5 @@
+<!--pages/review/more-movie/more-movie.wxml-->
+<import src="../movie-grid/movie-grid-template.wxml" />
+<view class="container">
+  <template is="movieGridTemplate" data="{{movieList:movieList,isLoading:isLoading,hasMore:hasMore,noData:noData}}" />
+</view>
