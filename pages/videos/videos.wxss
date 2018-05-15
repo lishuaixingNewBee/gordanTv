@@ -3,7 +3,7 @@
 @import "/components/swiper/swiper-template.wxss";
 @import "/components/item/item-template.wxss";
  page{
-     background-color: #f4f5f6; 
+     /* background-color: #f4f5f6;  */
 }
 .vertical-movie-module>.title {
   position: relative;

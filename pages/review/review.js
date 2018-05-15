@@ -1,29 +1,7 @@
 const util = require('../../utils/util.js');
 const doubanUrl = getApp().globalData.doubanBase;
-const swiperList = {
-  "status": 0,
-  "data": {
-    "banner": [{
-      "id": "27602222",
-      "title": "向往的生活",
-      "thumbnails": "http://m.qiyipic.com/common/lego/20180511/182dd81283de4f6b8ece2953735243f2.jpg"
-    },
-    {
-      "id": "27625644",
-      "title": "小猪佩奇",
-      "thumbnails": "http://m.qiyipic.com/common/lego/20180424/064f2e9901b54731926fea7cca783beb.jpg"
-    }, {
-      "id": "25938113",
-      "title": "火影忍者",
-      "thumbnails": "http://m.qiyipic.com/common/lego/20180510/7a4b7a02f2684eab922640ac556b9d71.jpg"
-    }, {
-      "id": "24773958",
-      "title": "复仇者联盟",
-      "thumbnails": "https://puui.qpic.cn/vcover_hz_pic/0/w7ju7urc1x4w3jct1472461377.jpg/0"
-    }
-    ]
-  }
-}
+const bannerUrl = getApp().globalData.musicBase;
+
 Page({
   data: {
     swiperList: [],
@@ -60,10 +38,12 @@ Page({
     })
   },
   initSwiper() {
-    console.log(swiperList.data.banner)
-    let list = swiperList.data.banner;
-    this.setData({
-      swiperList: list
+    util.$get(bannerUrl + '/api/tv/banner').then(res => {
+      if (res.data.status === 0) {
+        this.setData({
+          swiperList: res.data.data
+        })
+      }
     })
   },
   viewSearch() { // 打开搜索页面

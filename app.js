@@ -54,7 +54,7 @@ App({
     g_isPlayingMusic: false,
     g_currentMusicPostId: null,
     movieBase: "https://api.adline.com.cn",
-    musicBase: "https://api.gordantv.top",
+    musicBase: "https://api.huxiaowen.vip",
     QQMusicBase: "https://c.y.qq.com",
     doubanBase: "https://douban.uieee.com"
   }

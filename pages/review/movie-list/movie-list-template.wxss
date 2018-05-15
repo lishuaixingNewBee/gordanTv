@@ -7,15 +7,8 @@
   flex-direction: column;
 }
 
-.inner-container{
-    margin: 0  auto 20rpx;
-}
-
 .movie-head {
   padding: 30rpx 20rpx 22rpx;
-  /*display:flex;
-  flex-direction: row;
-  justify-content:space-between;*/
 }
 
 .slogan {
@@ -41,4 +34,5 @@
 .movies-container{
     display:flex; 
     flex-wrap: wrap;
+    margin:0rpx 9rpx 0rpx 9rpx;
 }

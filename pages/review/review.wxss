@@ -47,7 +47,12 @@
 .movies-template {
   margin-bottom: 30rpx;
 }
-
+.movies-template:last-of-type {
+  margin-bottom: 0;
+}
+.movie-container{
+  margin-bottom: 30rpx;
+}
 .xx-img {
   height: 30rpx;
   width: 30rpx;
