@@ -6,12 +6,12 @@
 
 狗蛋TV是基于微信小程序开发的一款App。gordanLee每天都会推荐一首歌、一篇文章、一段短视频，每天用十分钟的细碎时光，点燃内心的光明。目前分为音乐，短视频，影评三个模块。
 
-![banner.png](https://upload-images.jianshu.io/upload_images/3119054-155e641cc63fdf38?imageMogr2/auto-orient/)
+![banner.png](https://user-gold-cdn.xitu.io/2018/5/15/163621dd1fb8de7b?w=1240&h=720&f=png&s=237688)
 
 - [线上开源地址](https://github.com/lishuaixingNewBee/gordanTv) https://github.com/lishuaixingNewBee/gordanTv 点个赞吧！
 - [小程序开发文档](https://developers.weixin.qq.com/miniprogram/dev/)
 
-![引导页](https://user-gold-cdn.xitu.io/2018/5/15/1635f631d5173044?w=267&h=474&f=gif&s=953831)
+![引导页](https://user-gold-cdn.xitu.io/2018/5/15/16363d00625d335a?w=267&h=474&f=gif&s=556913)
 
 ![音乐页](https://user-gold-cdn.xitu.io/2018/5/15/1635f631d527619f?w=267&h=474&f=gif&s=2425224)
 
@@ -95,3 +95,17 @@ const convertToStarsArray = (average) => {
     务器中的富文本内容，是html格式的，小程序默认是不支持html格式的内容显示的，
     那我们需要显示html内容的时候，就可以通过wxParse来实现。
     ```
+### 项目安装
+```
+    git clone git@github.com:lishuaixingNewBee/gordanTv.git
+```
+
+### 目录结构
+------
+```shell
+|--- utils & Public Function              通用函数
+|--- components & components Public View  components和template模板
+|--- images & Img Resources               图片资源
+|--- pages & View Dir                     页面
+```
+### ○ 更新记录
