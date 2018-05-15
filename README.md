@@ -6,7 +6,7 @@
 
 狗蛋TV是基于微信小程序开发的一款App。gordanLee每天都会推荐一首歌、一篇文章、一段短视频，每天用十分钟的细碎时光，点燃内心的光明。目前分为音乐，短视频，影评三个模块。
 
-![banner.png](https://user-gold-cdn.xitu.io/2018/5/15/163621dd1fb8de7b?w=1240&h=720&f=png&s=237688)
+![banner.png](https://user-gold-cdn.xitu.io/2018/5/15/163621cf53070049?imageView2/1/w/1304/h/734/q/85/format/webp/interlace/1)
 
 - [线上开源地址](https://github.com/lishuaixingNewBee/gordanTv) https://github.com/lishuaixingNewBee/gordanTv 点个赞吧！
 - [小程序开发文档](https://developers.weixin.qq.com/miniprogram/dev/)
