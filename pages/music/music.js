@@ -33,7 +33,7 @@ Page({
   processData(type, list) {
     if (list.length) {
       list.map(v => { // 转换一下时间
-        return v.post_date = util.formatTime(new Date(v.post_date), 'yyyy-MM-dd')
+        return v.post_date = util.formatTime(new Date(v.post_date.replace(/-/g, '/')), 'yyyy-MM-dd')
       })
       if (type === 'up') { // 上拉处理
         this.setData({
