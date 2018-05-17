@@ -109,7 +109,7 @@ const convertToStarsArray = (average) => {
 |--- pages & View Dir                     页面
 ```
 ### ○ 更新记录
-
-```2018.5.17
+#### 2018.5.17
+```
     -   解决微信小程序中Date.parse()获取时间戳IOS不兼容的问题(IOS为NaN的问题)
 ```
