@@ -113,7 +113,10 @@ const convertToStarsArray = (average) => {
 ```
     -   解决微信小程序中Date.parse()获取时间戳IOS不兼容的问题(IOS为NaN的问题)
 ```
+<<<<<<< HEAD
 #### 2018.5.25
 ```
     -   微信废弃 获取 wx.getUserInfo 接口后续将不再出现授权弹窗，升级为 <button class="getUserInfo_btn" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">允许</button>
 ```
+=======
+>>>>>>> 5191e37d7d04ff5f9fc41157628dd2a9af6bf1c7
