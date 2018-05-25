@@ -1,0 +1,94 @@
+/* components/dialog/dialog.wxss */
+.dialog_mask {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  z-index: 666;
+  position: fixed;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.dialog_container {
+  width: 620rpx;
+  border-radius: 4px;
+  background: #fff;
+  background-color: #fff;
+  display: flex;
+    overflow: hidden;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding-top: 50rpx;
+}
+
+.dialog__title {
+  font-size: 36rpx;
+  margin-bottom: 18px;
+  padding: 0 36rpx;
+}
+
+.dialog__content--text {
+  color: #888;
+  font-size: 30rpx;
+  padding: 0 36rpx 30rpx;
+  text-align: center;
+}
+
+.log_wrap {
+  padding-bottom: 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.log_wrap--log {
+  width: 85rpx;
+  height: 85rpx;
+  border-radius: 50%;
+  background-image: url(https://tvax3.sinaimg.cn/crop.8.7.322.322.180/8970ff1ely8frdenkcgutj209k09kdgw.jpg);
+  background-size: cover;
+}
+
+.log_wrap--text {
+  margin-left: 15rpx;
+  font-size: 32rpx;
+}
+
+.dialog__btns {
+  width: 100%;
+  height: 100rpx;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+
+.dialog__btns--cancel {
+  flex: 1;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  color: #ccc;
+  justify-content: center;
+}
+.getUserInfo_btn {
+  flex: 1;
+  padding: 0;
+  margin: 0;
+  height: 100rpx;
+  line-height: 100rpx; 
+  border-radius: none;
+  border: 1px solid #2dc799;
+  color: #fff;
+  background-color:#2dc799;
+  display: flex;
+  font-size: 30rpx;
+  align-items: center;
+  justify-content: center;
+}

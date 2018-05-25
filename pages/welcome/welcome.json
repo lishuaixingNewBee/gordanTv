@@ -1,4 +1,6 @@
 {
   "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+    "wxc-dialog": "/components/dialog/dialog"
+  }
 }

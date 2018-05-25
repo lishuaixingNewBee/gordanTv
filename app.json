@@ -36,9 +36,8 @@
     ]
   },
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#2DC799",
     "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#2DC799",
     "navigationBarTitleText": "狗蛋TV",
     "navigationBarTextStyle": "white"
   }

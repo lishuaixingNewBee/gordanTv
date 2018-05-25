@@ -21,4 +21,5 @@
       </view>
     </view>
   </block>
+  <wxc-dialog class="wxc-dialog" title="微信授权" content="获得您的公开信息(昵称、头像等)" logName="狗蛋TV" logImage="https://tvax3.sinaimg.cn/crop.8.7.322.322.180/8970ff1ely8frdenkcgutj209k09kdgw.jpg" bindcancel="onCancel" bindconfirm="onConfirm"></wxc-dialog>
 </view>
