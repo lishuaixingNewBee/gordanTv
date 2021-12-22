@@ -1,25 +1,25 @@
 # 狗蛋TV
 
 <p align="center">
-  <img width="100" src="https://user-gold-cdn.xitu.io/2018/5/15/163622f528556b3d?w=290&h=290&f=png&s=10175">
+  <img width="100" src="https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/5/15/163622f528556b3d~tplv-t2oaga2asx-image.image">
 </p>
 
 狗蛋TV是基于微信小程序开发的一款App。gordanLee每天都会推荐一首歌、一篇文章、一段短视频，每天用十分钟的细碎时光，点燃内心的光明。目前分为音乐，短视频，影评三个模块。
 
-![banner.png](https://user-gold-cdn.xitu.io/2018/5/15/163621cf53070049?imageView2/1/w/1304/h/734/q/85/format/webp/interlace/1)
+![banner.png](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/5/15/163621cf53070049~tplv-t2oaga2asx-image.image)
 
 - [线上开源地址](https://github.com/lishuaixingNewBee/gordanTv) https://github.com/lishuaixingNewBee/gordanTv 点个赞吧！
 - [小程序开发文档](https://developers.weixin.qq.com/miniprogram/dev/)
 
-![引导页](https://user-gold-cdn.xitu.io/2018/5/15/16363d00625d335a?w=267&h=474&f=gif&s=556913)
+![引导页](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/5/15/16363d00625d335a~tplv-t2oaga2asx-image.image)
 
-![音乐页](https://user-gold-cdn.xitu.io/2018/5/15/1635f631d527619f?w=267&h=474&f=gif&s=2425224)
+![音乐页](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/5/15/1635f631d527619f~tplv-t2oaga2asx-image.image)
 
-![短视频页](https://user-gold-cdn.xitu.io/2018/5/15/1635f631d52e422c?w=267&h=474&f=gif&s=2739050)
+![短视频页](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/5/15/1635f631d52e422c~tplv-t2oaga2asx-image.image)
 
-![影评页](https://user-gold-cdn.xitu.io/2018/5/15/1635f631d5460ad5?w=267&h=474&f=gif&s=2924101)
+![影评页](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/5/15/1635f631d5460ad5~tplv-t2oaga2asx-image.image)
 
-![搜索页](https://user-gold-cdn.xitu.io/2018/5/15/1635f631d55a00f9?w=267&h=474&f=gif&s=1368594)
+![搜索页](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/5/15/1635f631d55a00f9~tplv-t2oaga2asx-image.image)
 
 
 `以下所有 API 均由产品公司自身提供，本人皆从网络获取。获取与共享之行为或有侵犯产品权益的嫌疑。若被告知需停止共享与使用，本人会及时删除此页面与整个项目。请您暸解相关情况，并遵守产品协议。`
@@ -28,10 +28,9 @@
 
 ### 感谢与支持
 ```
-    -   ONE一个api: https://api.gordantv.top (服务端做的接口转发，所以有些慢)
-    -   豆瓣api: https://douban.uieee.com
-    -   QQ音乐api: https://c.y.qq.com
-    -   快视频api: https://api.adline.com.cn
+    -   狗蛋TVapi: https://api.gordantv.top
+    -   豆瓣api: https://api.douban.com
+    -   QQ音乐api: https://y.qq.com
 ```
 
 ###  项目介绍
@@ -117,3 +116,7 @@ const convertToStarsArray = (average) => {
 ```
     -   微信废弃 获取 wx.getUserInfo 接口后续将不再出现授权弹窗，升级为 <button class="getUserInfo_btn" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">允许</button>
 ```
+
+<p align="center">
+  <img width="200" src="https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2019/8/27/16cd140d8008202a~tplv-t2oaga2asx-image.image">
+</p>
